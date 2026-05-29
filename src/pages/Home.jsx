@@ -64,10 +64,40 @@ function Home() {
                 to="/services"
                 className="rounded-2xl border border-slate-300 bg-white px-6 py-3 text-center font-bold text-slate-800 hover:bg-slate-50"
               >
-                View Services
+                View Services[]
               </Link>
             </div>
+            <div className="mt-6 rounded-2xl border border-blue-200 bg-white p-5 shadow-sm">
+              <p className="text-sm font-black uppercase tracking-wide text-blue-700">
+                Demo Access
+              </p>
 
+              <p className="mt-2 text-sm text-slate-600">
+                Use this admin account to preview the dashboard, bookings,
+                customers, services, and business settings.
+              </p>
+
+              <div className="mt-4 grid gap-3 text-sm sm:grid-cols-2">
+                <div className="rounded-xl bg-slate-50 p-3">
+                  <p className="font-bold text-slate-400">Email</p>
+                  <p className="font-black text-slate-800">
+                    admin@bookflow.com
+                  </p>
+                </div>
+
+                <div className="rounded-xl bg-slate-50 p-3">
+                  <p className="font-bold text-slate-400">Password</p>
+                  <p className="font-black text-slate-800">admin123</p>
+                </div>
+              </div>
+
+              <Link
+                to="/login"
+                className="mt-4 inline-block rounded-xl bg-slate-900 px-5 py-3 text-sm font-bold text-white hover:bg-slate-700"
+              >
+                Try Admin Demo
+              </Link>
+            </div>
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
               <ContactCard
                 icon={<Phone size={20} />}
